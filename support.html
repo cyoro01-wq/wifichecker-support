@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>サポート・よくある質問｜WiFiチェッカー（Mac）</title>
+  <meta name="description" content="WiFiチェッカー（Mac）のサポートページ。SSIDが表示されない、位置情報の許可、メニューバーに表示されない、回線速度テストが失敗する、セキュリティ警告の意味、自動起動の設定などのよくある質問とお問い合わせ方法。">
+  <link rel="canonical" href="https://cyoro01-wq.github.io/wifichecker-support/support.html">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="WiFiチェッカー">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:title" content="サポート・よくある質問｜WiFiチェッカー（Mac）">
+  <meta property="og:description" content="SSIDが表示されない、回線速度テストが失敗するなど、WiFiチェッカーのよくある質問とお問い合わせ方法。">
+  <meta property="og:url" content="https://cyoro01-wq.github.io/wifichecker-support/support.html">
+  <meta property="og:image" content="https://cyoro01-wq.github.io/wifichecker-support/images/01_menubar_overview.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "「SSIDを取得できません」と表示され、Wi-Fiの名前が出ません。",
+        "acceptedAnswer": { "@type": "Answer", "text": "macOS では Wi-Fi の名前（SSID）を読み取るアプリに位置情報の許可が必要です。システム設定 → プライバシーとセキュリティ → 位置情報サービス を開き、位置情報サービスと「WiFiチェッカー」をオンにしてください。許可するとアプリの表示は自動で更新されます。" }
+      },
+      {
+        "@type": "Question",
+        "name": "位置情報は何に使われますか？",
+        "acceptedAnswer": { "@type": "Answer", "text": "macOS の仕様で、Wi-Fi の名前の取得と周辺Wi-Fiのスキャンに位置情報の許可が必要なためです。WiFiチェッカーは位置そのものを取得・保存・送信しません。許可しなくても通信速度の表示は使えます。" }
+      },
+      {
+        "@type": "Question",
+        "name": "メニューバーに速度が表示されません。",
+        "acceptedAnswer": { "@type": "Answer", "text": "メニューバーの項目が多いと、画面の幅やカメラのノッチに隠れて表示されないことがあります。ほかのメニューバーアプリを減らすか、WiFiチェッカーの設定で「メニューバーにネットワーク名を表示」をオフにして表示を短くしてください。アプリを Finder や Launchpad から開くとメインウインドウが表示されるので、そこからも同じ情報を確認できます。" }
+      },
+      {
+        "@type": "Question",
+        "name": "メニューバーの速度と回線速度テストの数値が違います。",
+        "acceptedAnswer": { "@type": "Answer", "text": "メニューバーの速度は、いまMacで実際に流れている通信量を毎秒観測した値です。回線速度テストは計測サーバーと実際にデータを送受信して、回線の最大速度を測ります。通信していないときはメニューバーの値は小さくなるため、両者が違うのは正常です。" }
+      },
+      {
+        "@type": "Question",
+        "name": "回線速度テストが失敗します。",
+        "acceptedAnswer": { "@type": "Answer", "text": "インターネットに接続しているか確認してください。回線速度テストは Cloudflare の計測サーバー（speed.cloudflare.com）と通信します。VPN、会社や学校のネットワーク、セキュリティソフトのフィルタで遮断されている場合は測定できません。電波の安定した場所でもう一度お試しください。" }
+      },
+      {
+        "@type": "Question",
+        "name": "セキュリティ診断で「危険」や「注意」と表示されました。",
+        "acceptedAnswer": { "@type": "Answer", "text": "同じ名前で暗号化あり・なしのアクセスポイントが混在している、保存済みのWi-Fiと紛らわしい名前のWi-Fiがある、暗号化されていない・旧式の暗号化を使っている、といった兆候を知らせています。心当たりのないWi-Fiには接続せず、重要な通信は暗号化されたWi-FiやVPNで行ってください。電波情報だけを使った簡易診断のため、安全を保証するものではありません。" }
+      },
+      {
+        "@type": "Question",
+        "name": "アプリから別のWi-Fiに切り替えられません。",
+        "acceptedAnswer": { "@type": "Answer", "text": "Mac App Store 版は macOS のセキュリティ上の制限（App Sandbox）により、アプリから接続先を切り替えることができません。一覧でWi-Fiを選ぶと案内が表示されるので、「ネットワーク設定を開く」から macOS のWi-Fi設定で接続してください。" }
+      },
+      {
+        "@type": "Question",
+        "name": "Macの起動時に自動で起動させたい（止めたい）。",
+        "acceptedAnswer": { "@type": "Answer", "text": "WiFiチェッカーのメニューで「Mac起動時に自動で起動」をオン／オフしてください。システム設定 → 一般 → ログイン項目 からも変更できます。" }
+      },
+      {
+        "@type": "Question",
+        "name": "アプリを終了するには？",
+        "acceptedAnswer": { "@type": "Answer", "text": "メニューバーのWiFiチェッカーをクリックし、いちばん下の「終了」を選ぶか、メニューを開いた状態で Command + Q を押してください。ウインドウを閉じただけではメニューバーの表示は残ります。" }
+      },
+      {
+        "@type": "Question",
+        "name": "対応している macOS は？",
+        "acceptedAnswer": { "@type": "Answer", "text": "macOS 13 Ventura 以降に対応しています。" }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./"><img src="images/apple-touch-icon.png" alt="" width="32" height="32">WiFiチェッカー</a>
+      <nav class="site-nav" aria-label="サイト内">
+        <a href="./">紹介</a>
+        <a href="support.html" aria-current="page">サポート</a>
+        <a href="privacy.html">プライバシーポリシー</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap doc">
+    <h1>サポート・よくある質問</h1>
+    <p class="updated">WiFiチェッカー（Mac）の使い方で困ったときはこちらをご覧ください。</p>
+
+    <h2 id="faq">よくある質問</h2>
+
+    <details>
+      <summary>「SSIDを取得できません」と表示され、Wi-Fiの名前が出ません。</summary>
+      <p>macOS では Wi-Fi の名前（SSID）を読み取るアプリに位置情報の許可が必要です。<strong>システム設定 → プライバシーとセキュリティ → 位置情報サービス</strong> を開き、位置情報サービスと「WiFiチェッカー」をオンにしてください。許可するとアプリの表示は自動で更新されます。</p>
+    </details>
+
+    <details>
+      <summary>位置情報は何に使われますか？</summary>
+      <p>macOS の仕様で、Wi-Fi の名前の取得と周辺Wi-Fiのスキャンに位置情報の許可が必要なためです。WiFiチェッカーは位置そのものを取得・保存・送信しません。許可しなくても通信速度の表示は使えます。</p>
+    </details>
+
+    <details>
+      <summary>メニューバーに速度が表示されません。</summary>
+      <p>メニューバーの項目が多いと、画面の幅やカメラのノッチに隠れて表示されないことがあります。ほかのメニューバーアプリを減らすか、WiFiチェッカーの設定で「メニューバーにネットワーク名を表示」をオフにして表示を短くしてください。アプリを Finder や Launchpad から開くとメインウインドウが表示されるので、そこからも同じ情報を確認できます。</p>
+    </details>
+
+    <details>
+      <summary>メニューバーの速度と回線速度テストの数値が違います。</summary>
+      <p>メニューバーの速度は、いまMacで実際に流れている通信量を毎秒観測した値です。回線速度テストは計測サーバーと実際にデータを送受信して、回線の最大速度を測ります。通信していないときはメニューバーの値は小さくなるため、両者が違うのは正常です。</p>
+    </details>
+
+    <details>
+      <summary>回線速度テストが失敗します。</summary>
+      <p>インターネットに接続しているか確認してください。回線速度テストは Cloudflare の計測サーバー（<code>speed.cloudflare.com</code>）と通信します。VPN、会社や学校のネットワーク、セキュリティソフトのフィルタで遮断されている場合は測定できません。電波の安定した場所でもう一度お試しください。</p>
+    </details>
+
+    <details>
+      <summary>セキュリティ診断で「危険」や「注意」と表示されました。</summary>
+      <p>同じ名前で暗号化あり・なしのアクセスポイントが混在している、保存済みのWi-Fiと紛らわしい名前のWi-Fiがある、暗号化されていない・旧式の暗号化を使っている、といった兆候を知らせています。心当たりのないWi-Fiには接続せず、重要な通信は暗号化されたWi-FiやVPNで行ってください。電波情報だけを使った簡易診断のため、安全を保証するものではありません。</p>
+    </details>
+
+    <details>
+      <summary>アプリから別のWi-Fiに切り替えられません。</summary>
+      <p>Mac App Store 版は macOS のセキュリティ上の制限（App Sandbox）により、アプリから接続先を切り替えることができません。一覧でWi-Fiを選ぶと案内が表示されるので、「ネットワーク設定を開く」から macOS のWi-Fi設定で接続してください。</p>
+    </details>
+
+    <details>
+      <summary>Macの起動時に自動で起動させたい（止めたい）。</summary>
+      <p>WiFiチェッカーのメニューで「Mac起動時に自動で起動」をオン／オフしてください。<strong>システム設定 → 一般 → ログイン項目</strong> からも変更できます。</p>
+    </details>
+
+    <details>
+      <summary>アプリを終了するには？</summary>
+      <p>メニューバーのWiFiチェッカーをクリックし、いちばん下の「終了」を選ぶか、メニューを開いた状態で Command + Q を押してください。ウインドウを閉じただけではメニューバーの表示は残ります。</p>
+    </details>
+
+    <details>
+      <summary>対応している macOS は？</summary>
+      <p>macOS 13 Ventura 以降に対応しています。</p>
+    </details>
+
+    <h2 id="contact">お問い合わせ</h2>
+    <p>不具合のご報告やご質問は、GitHub の Issues からお寄せください。</p>
+    <p><a class="button" href="https://github.com/cyoro01-wq/wifichecker-support/issues/new">お問い合わせ（GitHub Issues）</a></p>
+    <ul>
+      <li>お使いの macOS のバージョンと WiFiチェッカーのバージョンを書き添えていただくと、調査がスムーズです。</li>
+      <li>Issues は誰でも閲覧できる公開の場です。<strong>Wi-Fiの名前（SSID）、パスワード、IPアドレス、メールアドレスなどの個人情報は書き込まないでください。</strong></li>
+    </ul>
+
+    <h2 id="privacy">プライバシー</h2>
+    <p>WiFiチェッカーは個人情報を収集しません。詳しくは<a href="privacy.html">プライバシーポリシー</a>をご覧ください。</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <nav aria-label="フッター">
+        <a href="./">紹介</a>
+        <a href="support.html">サポート</a>
+        <a href="privacy.html">プライバシーポリシー</a>
+        <a href="https://apps.apple.com/jp/app/id6797778849">Mac App Store</a>
+      </nav>
+      <p>© 2026 WiFiチェッカー　Mac、macOS、Mac App Store は Apple Inc. の商標です。</p>
+    </div>
+  </footer>
+</body>
+</html>

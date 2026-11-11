@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cyoro01-wq.github.io/wifichecker-support/sitemap.xml
