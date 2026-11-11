@@ -73,7 +73,9 @@ img { max-width: 100%; height: auto; display: block; }
 /* ヒーロー */
 .hero { padding: 56px 0 32px; text-align: center; }
 .hero .app-icon { width: 128px; height: 128px; margin: 0 auto 20px; border-radius: 28px; }
-.hero h1 { font-size: clamp(28px, 5vw, 40px); line-height: 1.3; margin: 0 0 12px; }
+.hero h1 { font-size: clamp(26px, 5vw, 40px); line-height: 1.35; margin: 0 0 12px; }
+/* 日本語の見出しを語句の途中で折り返さない（「を、」だけが次行に残るのを防ぐ） */
+.phrase { display: inline-block; }
 .hero .lead { color: var(--muted); font-size: 18px; margin: 0 auto 28px; max-width: 640px; }
 
 .button {
